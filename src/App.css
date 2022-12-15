@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+:root {
+  --border-line: 1px solid black;
+  --font-family: "Fredoka One", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  font-size: 62.5%;
+  margin-top: 10px;
+  font-family: var(--font-family);
+  font-weight: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  width: 100%;
+}
+
+/* CONTAINER*/
+
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.programming-lenguages {
+  justify-content: space-around;
+  width: 80%;
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.flex-spaceBetween {
+  justify-content: space-between;
+}
+
+.flex-icon {
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+}
+
+.flex-logo {
+  width: 180px;
+  padding: 3px;
+}
+
+.max-width {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .programming-lenguages {
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family);
+  font-weight: normal;
+}
+
+.opacity7 {
+  opacity: 0.7;
+}
+
+.letter-space {
+  letter-spacing: 2px;
 }
