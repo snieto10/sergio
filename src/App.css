@@ -1,6 +1,7 @@
 :root {
   --border-line: 1px solid black;
   --font-family: "Fredoka One", cursive;
+  --background-color: #f0f1f3;
 }
 
 *,
@@ -17,7 +18,6 @@ html {
 }
 
 img {
-  width: 100%;
 }
 
 /* CONTAINER*/
@@ -30,7 +30,7 @@ img {
 
 .programming-lenguages {
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
   display: none;
 }
 
@@ -54,6 +54,72 @@ img {
   margin: 0 auto;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  overflow: hidden;
+  margin-top: 5rem;
+  border: 3px solid red;
+}
+
+.background1 {
+  height: 300px;
+  border: 3px solid purple;
+}
+
+.background1_center {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 300px;
+  position: relative;
+}
+
+.background1_absolute-right {
+  height: 612px;
+  width: 672px;
+  position: absolute;
+  left: 600px;
+}
+
+.background1_absolute-left {
+  height: 612px;
+  width: 672px;
+  right: 600px;
+  position: absolute;
+}
+
+.background1_img {
+  width: 672px;
+  height: 612px;
+}
+
+.background2_center {
+  background-color: azure;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+  z-index: -1;
+  background-color: var(--background-color);
+}
+
+.title {
+  width: 100%;
+  height: 300px;
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title_flex {
+  border: 3px solid blue;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 600px) {
   .programming-lenguages {
     display: flex;
@@ -68,6 +134,10 @@ h3,
 h4 {
   font-family: var(--font-family);
   font-weight: normal;
+}
+
+h1 {
+  color: rgb(24, 49, 83);
 }
 
 .opacity7 {
