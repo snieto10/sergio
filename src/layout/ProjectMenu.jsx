@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { HashLink as Link } from "react-router-hash-link";
+
 function ProjectMenu() {
   const [active, setActive] = useState(true);
 
@@ -10,11 +12,15 @@ function ProjectMenu() {
   return (
     <>
       <div className={active ? "main-menu" : "main-menu expand"}>
-        <h2>Project 1</h2>
-        <h2>Project 2</h2>
-        <h2>Project 3</h2>
-        <h2>Project 4</h2>
-        <h2>Project 5</h2>
+        <Link to="#project1">
+          <h2>Project 1</h2>
+        </Link>
+        <Link to="#project2">
+          <h2>Project 2</h2>
+        </Link>
+        <Link to="#project3">
+          <h2>Project 3</h2>
+        </Link>
       </div>
 
       <div className={active ? "menu" : "menu none"} onClick={handleClick}>

@@ -20,9 +20,9 @@ function Body() {
             </div>
           </div>
           <div className="background2_center">
-            <div className="projects"></div>
-            <div className="projects"></div>
-            <div className="projects"></div>
+            <div className="projects" id="project1"></div>
+            <div className="projects" id="project2"></div>
+            <div className="projects" id="project3"></div>
           </div>
         </div>
       </div>

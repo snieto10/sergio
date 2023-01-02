@@ -3,13 +3,16 @@ import Body from "./layout/Body";
 import ProjectMenu from "./layout/ProjectMenu";
 import "./App.css";
 import "./normalize.css";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <TopTitle />
-      <Body />
-      <ProjectMenu />
+      <BrowserRouter>
+        <TopTitle />
+        <Body />
+        <ProjectMenu />
+      </BrowserRouter>
     </>
   );
 }
