@@ -1,4 +1,3 @@
-import MenuBar from "../assets/components/MenuBar";
 import hero from "../assets/images/hero.svg";
 
 function Body() {
@@ -17,10 +16,14 @@ function Body() {
             </div>
             <div className="title">
               <h1 className="flex">Scroll Down to see Projects</h1>
-              <h1>or use the Project Menu</h1>
+              <h1>or use the Projects Menu</h1>
             </div>
           </div>
-          <div className="background2_center"></div>
+          <div className="background2_center">
+            <div className="projects"></div>
+            <div className="projects"></div>
+            <div className="projects"></div>
+          </div>
         </div>
       </div>
     </>
