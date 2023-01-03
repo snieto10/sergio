@@ -12,13 +12,13 @@ function ProjectMenu() {
   return (
     <>
       <div className={active ? "main-menu" : "main-menu expand"}>
-        <Link to="#project1">
+        <Link to="#project1" smooth>
           <h2>Project 1</h2>
         </Link>
-        <Link to="#project2">
+        <Link to="#project2" smooth>
           <h2>Project 2</h2>
         </Link>
-        <Link to="#project3">
+        <Link to="#project3" smooth>
           <h2>Project 3</h2>
         </Link>
       </div>
