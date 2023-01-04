@@ -39,10 +39,17 @@ function Body() {
                 dynamic table, pulled the current price from API, also you can
                 sort the table in any way you prefer.
               </div>
+              <br></br>
               <PortfolioTracker />
             </div>
-            <div className="projects" id="project2"></div>
-            <div className="projects" id="project3"></div>
+            <div className="projects" id="project2">
+              {" "}
+              <div className="projects_title"> 2- SLIDERS</div>
+            </div>
+            <div className="projects" id="project3">
+              {" "}
+              <div className="projects_title"> 3- GIT HUB FINDERS</div>
+            </div>
           </div>
         </div>
       </div>

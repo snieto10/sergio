@@ -17,7 +17,7 @@ function PortfolioTracker() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "6d5a7e219dmsh92dcccd43215067p1f8b09jsn5c7301bcd7ef",
+        "X-RapidAPI-Key": "cd157152ddmsh362115c98e02a68p1c16b9jsn86a839c24f3b",
         "X-RapidAPI-Host": "real-time-finance-data.p.rapidapi.com",
       },
     };
@@ -30,69 +30,6 @@ function PortfolioTracker() {
       .then((response) => {
         let newArray = [...stocks];
         newArray[0].price = response.data.price;
-        setData(response.data);
-      })
-      .catch((err) => console.error(err));
-  }, []);
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "6d5a7e219dmsh92dcccd43215067p1f8b09jsn5c7301bcd7ef",
-        "X-RapidAPI-Host": "real-time-finance-data.p.rapidapi.com",
-      },
-    };
-
-    let info = fetch(
-      `https://real-time-finance-data.p.rapidapi.com/stock-quote?symbol=AAPL`,
-      options
-    )
-      .then((response) => response.json())
-      .then((response) => {
-        let newArray = [...stocks];
-        newArray[1].price = response.data.price;
-        setData(response.data);
-      })
-      .catch((err) => console.error(err));
-  }, []);
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "6d5a7e219dmsh92dcccd43215067p1f8b09jsn5c7301bcd7ef",
-        "X-RapidAPI-Host": "real-time-finance-data.p.rapidapi.com",
-      },
-    };
-
-    let info = fetch(
-      `https://real-time-finance-data.p.rapidapi.com/stock-quote?symbol=FB`,
-      options
-    )
-      .then((response) => response.json())
-      .then((response) => {
-        let newArray = [...stocks];
-        newArray[2].price = response.data.price;
-        setData(response.data);
-      })
-      .catch((err) => console.error(err));
-  }, []);
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "6d5a7e219dmsh92dcccd43215067p1f8b09jsn5c7301bcd7ef",
-        "X-RapidAPI-Host": "real-time-finance-data.p.rapidapi.com",
-      },
-    };
-
-    let info = fetch(
-      `https://real-time-finance-data.p.rapidapi.com/stock-quote?symbol=AMZN`,
-      options
-    )
-      .then((response) => response.json())
-      .then((response) => {
-        let newArray = [...stocks];
-        newArray[3].price = response.data.price;
         setData(response.data);
       })
       .catch((err) => console.error(err));

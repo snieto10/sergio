@@ -106,7 +106,6 @@ img {
   position: relative;
   z-index: -1;
   background-color: var(--background-color);
-  border: 3px solid yellow;
 }
 
 .title {
@@ -127,7 +126,6 @@ img {
 .projects {
   width: 600px;
   margin: 0 auto;
-  border: 2px solid gold;
   min-height: 300px;
 }
 
@@ -237,7 +235,7 @@ a:active {
 }
 
 .text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 2rem 4rem;
   font-weight: bold;
   line-height: 2.5rem;
