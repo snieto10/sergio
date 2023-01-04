@@ -21,6 +21,10 @@ html {
 img {
 }
 
+.sergio {
+  width: 150px;
+}
+
 /* CONTAINER*/
 
 .flex {
@@ -216,6 +220,28 @@ a:active {
   cursor: pointer;
   white-space: nowrap;
   box-shadow: 0 5px 0 0 var(--color-text);
+}
+.projects_title {
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  background-color: gold;
+  border: 2px solid var(--color-text);
+  white-space: nowrap;
+  box-shadow: 0 5px 0 0 var(--color-text);
+}
+
+.text {
+  font-size: 1.4rem;
+  padding: 2rem 4rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  color: var(--color-text);
 }
 
 /* MENU */

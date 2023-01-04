@@ -33,6 +33,12 @@ function Body() {
           </div>
           <div className="background2_center">
             <div className="projects" id="project1">
+              <div className="projects_title"> 1- PORTFOLIO TRACKER</div>
+              <div className="text">
+                Add stocks and track your portfolio. Used usestate to create
+                dynamic table, pulled the current price from API, also you can
+                sort the table in any way you prefer.
+              </div>
               <PortfolioTracker />
             </div>
             <div className="projects" id="project2"></div>
