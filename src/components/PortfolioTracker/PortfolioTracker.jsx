@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 function PortfolioTracker() {
   let [stocks, setStocks] = useState([
     { sticker: "GOOG", name: "Google", qty: 20, price: 0 },
-    { sticker: "APPL", name: "APPLE", qty: 10, price: 0 },
+    { sticker: "APPL", name: "APPLE", qty: 10, price: 5 },
     { sticker: "FB", name: "Facebook", qty: 400, price: 0 },
     { sticker: "AMZN", name: "Amazon", qty: 50, price: 0 },
   ]);
@@ -11,6 +11,7 @@ function PortfolioTracker() {
   let [sticker, setSticker] = useState("");
   let [qty, setQty] = useState("");
   let [data, setData] = useState([]);
+  let [validation, setValidation] = useState(0);
 
   useEffect(() => {
     const options = {
@@ -113,49 +114,67 @@ function PortfolioTracker() {
   };
 
   let handleAdd = () => {
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "6d5a7e219dmsh92dcccd43215067p1f8b09jsn5c7301bcd7ef",
-        "X-RapidAPI-Host": "real-time-finance-data.p.rapidapi.com",
-      },
-    };
-
-    let info = fetch(
-      `https://real-time-finance-data.p.rapidapi.com/stock-quote?symbol=${sticker}`,
-      options
-    )
-      .then((response) => response.json())
-      .then((response) => setData(response.data))
-      .catch((err) => console.error(err));
+    if (sticker.length === 0 && qty.length === 0) {
+      setValidation(1);
+    }
+    if (sticker.length === 0 && qty.length > 0) {
+      setValidation(2);
+    }
+    if (sticker.length > 0 && qty.length === 0) {
+      setValidation(3);
+    }
+    if (sticker.length !== 0 && qty.length !== 0) {
+      setValidation(0);
+      let clonedArray = [...stocks];
+      clonedArray.push({
+        sticker: sticker,
+        name: "Amazon",
+        qty: qty,
+        price: 10,
+      });
+      setStocks(clonedArray);
+      setSticker("");
+      setQty("");
+    }
   };
   return (
     <>
       <div className="portfolio_box">
         <div className="portfolio_searchbox">
-          <input
-            className="portfolio_input1"
-            type="text"
-            id="stock"
-            name="stock"
-            placeholder="Stock Sticker"
-            onChange={handleChange1}
-            value={sticker}
-          ></input>
-          <input
-            className="portfolio_input2"
-            type="number"
-            id="qty"
-            name="qty"
-            placeholder="Quantity"
-            onChange={handleChange2}
-            value={qty}
-          ></input>
+          <form>
+            <input
+              className="portfolio_input1"
+              type="text"
+              id="stock"
+              name="stock"
+              placeholder="Stock Sticker"
+              onChange={handleChange1}
+              value={sticker}
+            ></input>
+            <input
+              className="portfolio_input2"
+              type="number"
+              id="qty"
+              name="qty"
+              placeholder="Quantity"
+              onChange={handleChange2}
+              value={qty}
+            ></input>
+          </form>
         </div>
         <button className="btn btn-yellow" onClick={handleAdd}>
           ADD STOCK
         </button>
       </div>
+      {validation === 1 ? (
+        <div className="validation">Please add Stock Sticker and Quantity</div>
+      ) : null}
+      {validation === 2 ? (
+        <div className="validation">Please add Stock Sticker </div>
+      ) : null}
+      {validation === 3 ? (
+        <div className="validation">Please add Quantity</div>
+      ) : null}
       <div className="portfolio_table">
         <table>
           <thead>
@@ -187,6 +206,13 @@ function PortfolioTracker() {
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="portfolio_total">
+        TOTAL PORTFOLIO VALUE IS{" "}
+        {stocks.reduce(
+          (accumulator, value) => accumulator + value.price * value.qty,
+          0
+        )}
       </div>
     </>
   );
