@@ -35,9 +35,12 @@ function Body() {
             <div className="projects" id="project1">
               <div className="projects_title"> 1- PORTFOLIO TRACKER</div>
               <div className="text">
-                Add stocks and track your portfolio. Used usestate to create
-                dynamic table, pulled the current price from API, also you can
-                sort the table in any way you prefer.
+                ADD STOCKS AND TRACK YOUR PORTFOLIO <br />
+                <span style={{ fontSize: "1.4rem" }}>
+                  Used useState to create dynamic table, pulled the current
+                  price from API (using Fetch, .then()), sort the table in every
+                  column. Validation was added.
+                </span>
               </div>
               <br></br>
               <PortfolioTracker />

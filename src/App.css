@@ -316,11 +316,13 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 550px;
+  margin: 0 auto;
 }
 .portfolio_searchbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .portfolio_input1 {
@@ -353,7 +355,7 @@ a:active {
 }
 
 .portfolio_table th {
-  width: 100px;
+  width: 80px;
   text-align: center;
   height: 30px;
 }
@@ -376,6 +378,6 @@ a:active {
 .portfolio_total {
   text-align: center;
   font-size: 1.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-weight: bold;
 }
