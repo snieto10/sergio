@@ -53,6 +53,18 @@ function Body() {
               {" "}
               <div className="projects_title"> 3- GIT HUB FINDERS</div>
             </div>
+            <div className="projects" id="project3">
+              {" "}
+              <div className="projects_title"> 4- SHOPPING CART</div>
+            </div>
+            <div className="projects" id="project3">
+              {" "}
+              <div className="projects_title"> 5 - AUTOCOMPLETE</div>
+            </div>
+            <div className="projects" id="project3">
+              {" "}
+              <div className="projects_title"> OTHER PROJECTS</div>
+            </div>
           </div>
         </div>
       </div>

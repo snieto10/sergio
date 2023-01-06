@@ -18,10 +18,10 @@ function TopTitle() {
         </div>
         <div className="flex">
           <div className="flex flex-icon">
-            <img src={linkedIn} alt="linkedinlogo" />
+            <img className="fronticons" src={linkedIn} alt="linkedinlogo" />
           </div>
           <div className="flex flex-icon">
-            <img src={github} alt="githublogo" />
+            <img className="fronticons" src={github} alt="githublogo" />
           </div>
         </div>
       </div>
