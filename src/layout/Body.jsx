@@ -1,6 +1,7 @@
 import hero from "../assets/images/hero.svg";
 import PortfolioTracker from "./../components/PortfolioTracker/PortfolioTracker";
 import { HashLink as Link } from "react-router-hash-link";
+import Slider from "../components/Slider/Slider";
 
 function Body() {
   return (
@@ -48,6 +49,7 @@ function Body() {
             <div className="projects" id="project2">
               {" "}
               <div className="projects_title"> 2- SLIDERS</div>
+              <Slider />
             </div>
             <div className="projects" id="project3">
               {" "}
