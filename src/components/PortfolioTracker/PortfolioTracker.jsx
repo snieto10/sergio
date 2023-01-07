@@ -6,10 +6,8 @@ function PortfolioTracker() {
     { sticker: "META", name: "Meta Platforms", qty: 79, price: 0 },
     { sticker: "AMZN", name: "Amazon", qty: 119, price: 0 },
   ]);
-  let [newStock, setNewStock] = useState({});
   let [sticker, setSticker] = useState("");
   let [qty, setQty] = useState("");
-  let [data, setData] = useState([]);
   let [validation, setValidation] = useState(0);
   let [sortSticker, setSortSticker] = useState(0);
 
@@ -77,6 +75,7 @@ function PortfolioTracker() {
   };
 
   let handleAdd = () => {
+    console.log(1, stocks);
     let finder = stocks.find((element) => element.sticker == sticker);
 
     if (sticker.length === 0 && qty.length === 0) {
@@ -212,6 +211,7 @@ function PortfolioTracker() {
 
   return (
     <>
+      {" "}
       <div className="portfolio_box">
         <div className="portfolio_searchbox">
           <form>

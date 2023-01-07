@@ -382,3 +382,35 @@ a:active {
   margin-bottom: 4rem;
   font-weight: bold;
 }
+
+/* Size Required */
+
+.size-big {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  margin-top: 100px;
+}
+
+.size-box {
+  border-radius: 5px;
+  width: 300px;
+  height: 55px;
+  border: 3px solid darkred;
+  background-color: red;
+  color: white;
+  font-size: 1.63rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .size-big {
+    display: none;
+  }
+}
