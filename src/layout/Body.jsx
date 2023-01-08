@@ -2,6 +2,7 @@ import hero from "../assets/images/hero.svg";
 import PortfolioTracker from "./../components/PortfolioTracker/PortfolioTracker";
 import { HashLink as Link } from "react-router-hash-link";
 import Slider from "../components/Slider/Slider";
+import Slider2 from "../components/Slider/Slider2";
 
 function Body() {
   return (
@@ -49,7 +50,18 @@ function Body() {
             <div className="projects" id="project2">
               {" "}
               <div className="projects_title"> 2- SLIDERS</div>
+              <div className="text">
+                <br />
+                <span style={{ fontSize: "1.4rem" }}>
+                  Used useState, useEffect, and useRef to create two different
+                  sliders. On the first slider you need to click to change
+                  image, on second slider you need to drag to see the images.
+                </span>
+                <br />
+                Slider 1
+              </div>
               <Slider />
+              <Slider2 />
             </div>
             <div className="projects" id="project3">
               {" "}

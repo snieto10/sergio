@@ -490,3 +490,29 @@ a:active {
 .dot.active {
   background: rgb(32, 32, 32);
 }
+
+/*Carousel Slider*/
+
+.item {
+  min-height: 200px;
+  min-width: 200px;
+  padding: 20px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  pointer-events: none;
+}
+
+.inner-carrousel {
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  background-color: lightblue;
+  margin-bottom: 40px;
+}
