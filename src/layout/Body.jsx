@@ -3,6 +3,8 @@ import PortfolioTracker from "./../components/PortfolioTracker/PortfolioTracker"
 import { HashLink as Link } from "react-router-hash-link";
 import Slider from "../components/Slider/Slider";
 import Slider2 from "../components/Slider/Slider2";
+import TicTacToe from "../components/TicTacToe/TicTacToe";
+import { useRef } from "react";
 
 function Body() {
   return (
@@ -13,8 +15,14 @@ function Body() {
             <div className="background1_absolute-right">
               <img className="background1_img" src={hero} alt="" />
               <img className="background1_img" src={hero} alt="" />
+              <img className="background1_img" src={hero} alt="" />
+              <img className="background1_img" src={hero} alt="" />
+              <img className="background1_img" src={hero} alt="" />
             </div>
             <div className="background1_absolute-left">
+              <img className="background1_img" src={hero} alt="" />
+              <img className="background1_img" src={hero} alt="" />
+              <img className="background1_img" src={hero} alt="" />
               <img className="background1_img" src={hero} alt="" />
               <img className="background1_img" src={hero} alt="" />
             </div>
@@ -40,8 +48,8 @@ function Body() {
                 ADD STOCKS AND TRACK YOUR PORTFOLIO <br />
                 <span style={{ fontSize: "1.4rem" }}>
                   Used useState to create dynamic table, pulled the current
-                  price from API (using Fetch, .then()), sort the table in every
-                  column. Validation was added.
+                  price from API (using Fetch, .then()), sort the table by
+                  Sticker or Price. Validation was added.
                 </span>
               </div>
               <br></br>
@@ -51,31 +59,41 @@ function Body() {
               {" "}
               <div className="projects_title"> 2- SLIDERS</div>
               <div className="text">
-                <br />
+                SLIDER 1 - Click to change image <br />
                 <span style={{ fontSize: "1.4rem" }}>
-                  Used useState, useEffect, and useRef to create two different
-                  sliders. On the first slider you need to click to change
-                  image, on second slider you need to drag to see the images.
+                  Created basic Slider showing different pictures. This Slider
+                  was created using React and CSS.
                 </span>
-                <br />
-                Slider 1
               </div>
               <Slider />
+              <div className="text">
+                SLIDER 2 - Grab to slide images <br />
+                <span style={{ fontSize: "1.4rem" }}>
+                  Copied Amazon.com Slider to show products for Tablet or
+                  Mobile. Used the React's framer-motion library, and useState,
+                  useEffect and useRef hooks.
+                </span>
+              </div>
               <Slider2 />
             </div>
             <div className="projects" id="project3">
               {" "}
-              <div className="projects_title"> 3- GIT HUB FINDERS</div>
+              <div className="projects_title"> 3- TIC-TAC-TOE</div>
+              <div className="text">
+                PLAY TIC-TAC-TOE AGAINST THE PC <br />
+                <span style={{ fontSize: "1.4rem" }}>
+                  Created a TicTacToe using Javascript and React. If you win,
+                  computer will have a extra turn to tie !
+                </span>
+              </div>
+              <br></br>
+              <TicTacToe />
             </div>
-            <div className="projects" id="project3">
+            <div className="projects" id="project4">
               {" "}
               <div className="projects_title"> 4- SHOPPING CART</div>
             </div>
-            <div className="projects" id="project3">
-              {" "}
-              <div className="projects_title"> 5 - AUTOCOMPLETE</div>
-            </div>
-            <div className="projects" id="project3">
+            <div className="projects" id="project5">
               {" "}
               <div className="projects_title"> OTHER PROJECTS</div>
             </div>
