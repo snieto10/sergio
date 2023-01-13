@@ -5,6 +5,7 @@ import Slider from "../components/Slider/Slider";
 import Slider2 from "../components/Slider/Slider2";
 import TicTacToe from "../components/TicTacToe/TicTacToe";
 import { useRef } from "react";
+import ShoppingCart from "../components/ShoppingCart/ShoppingCart";
 
 function Body() {
   return (
@@ -32,10 +33,10 @@ function Body() {
                 <h1>or use the Projects Menu</h1>
               </div>
               <div className="buttons">
-                <Link to="#project1" smooth>
+                <Link to="#project2" smooth>
                   <button className="btn_title">The Favorite One</button>
                 </Link>
-                <Link to="#project3" smooth>
+                <Link to="#project4" smooth>
                   <button className="btn_title">The Complex One</button>
                 </Link>
               </div>
@@ -92,6 +93,14 @@ function Body() {
             <div className="projects" id="project4">
               {" "}
               <div className="projects_title"> 4- SHOPPING CART</div>
+              <div className="text">
+                PLAY TIC-TAC-TOE AGAINST THE PC <br />
+                <span style={{ fontSize: "1.4rem" }}>
+                  Created a TicTacToe using Javascript and React. If you win,
+                  computer will have a extra turn to tie !
+                </span>
+              </div>
+              <ShoppingCart />
             </div>
             <div className="projects" id="project5">
               {" "}

@@ -579,3 +579,79 @@ a:active {
   font-weight: bold;
   font-size: 1.4rem;
 }
+
+/*Shopping Cart*/
+
+.container-box-box {
+  width: 600px;
+  height: 210px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-title-box {
+  width: 600px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-box {
+  border: 1px solid black;
+  width: 210px;
+  height: 210px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.box-title-box {
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.box-item-box {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(34, 108, 177);
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: move;
+}
+
+.current-box {
+  color: white;
+  border: 1px solid white;
+}
+
+.baby-box {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.fruits {
+  margin: 0;
+}
+
+.shopping-text {
+  font-size: 1.6rem;
+}
