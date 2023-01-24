@@ -103,7 +103,7 @@ html {
 .background2_center {
   background-color: azure;
   margin: 0 auto;
-  height: 2000px;
+  height: 2325px;
   position: relative;
   z-index: -1;
   background-color: var(--background-color);
@@ -495,7 +495,7 @@ a:active {
 
 .item {
   min-height: 200px;
-  min-width: 200px;
+  min-width: 250px;
   padding: 20px;
 }
 
@@ -516,6 +516,30 @@ a:active {
   background-color: rgb(228, 229, 229);
   margin-bottom: 40px;
   margin-top: 20px;
+}
+
+.hiddenBox {
+  display: none;
+}
+
+.alert-text {
+  text-align: center;
+  border-radius: 5px;
+  color: red;
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  margin-top: 2rem;
+  height: 3rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hiddenBox {
+    display: block;
+  }
+
+  .alert-text {
+    color: var(--background-color);
+  }
 }
 
 /* TOCTACTOE */

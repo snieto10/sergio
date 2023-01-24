@@ -61,57 +61,60 @@ function FinalTable({ data }) {
 
   return (
     <>
-      <div className="container-title-box">
-        <div className="box-title-box">
-          <span className="shopping-text">Products</span>
+      <div className="alert-text">Please use desktop to see this project</div>
+      <div className="hiddenBox">
+        <div className="container-title-box">
+          <div className="box-title-box">
+            <span className="shopping-text">Products</span>
+          </div>
+          <div className="box-title-box">
+            <span className="shopping-text">Shopping Cart</span>
+          </div>
         </div>
-        <div className="box-title-box">
-          <span className="shopping-text">Shopping Cart</span>
-        </div>
-      </div>
-      <div className="container-box-box">
-        {list.map((element, boxIndex) => {
-          return (
-            <div
-              className="box-box"
-              key={element.title}
-              onDragEnter={
-                dragging && !element.items.length
-                  ? (e) => handleDragEnter(e, { boxIndex, itemIndex: 0 })
-                  : null
-              }
-            >
-              {element.items.map((element, itemIndex) => (
-                <div
-                  onDragStart={(e) =>
-                    handleDragStart(e, { boxIndex, itemIndex })
-                  }
-                  onDragEnter={
-                    dragging
-                      ? (e) => handleDragEnter(e, { boxIndex, itemIndex })
-                      : null
-                  }
-                  key={itemIndex}
-                  className={
-                    dragging
-                      ? getStyles({ boxIndex, itemIndex })
-                      : "box-item-box"
-                  }
-                  draggable
-                >
-                  <div className="baby-box">
-                    <div>{element.name}</div>
-                    <div className="fruits">${element.price}</div>
+        <div className="container-box-box">
+          {list.map((element, boxIndex) => {
+            return (
+              <div
+                className="box-box"
+                key={element.title}
+                onDragEnter={
+                  dragging && !element.items.length
+                    ? (e) => handleDragEnter(e, { boxIndex, itemIndex: 0 })
+                    : null
+                }
+              >
+                {element.items.map((element, itemIndex) => (
+                  <div
+                    onDragStart={(e) =>
+                      handleDragStart(e, { boxIndex, itemIndex })
+                    }
+                    onDragEnter={
+                      dragging
+                        ? (e) => handleDragEnter(e, { boxIndex, itemIndex })
+                        : null
+                    }
+                    key={itemIndex}
+                    className={
+                      dragging
+                        ? getStyles({ boxIndex, itemIndex })
+                        : "box-item-box"
+                    }
+                    draggable
+                  >
+                    <div className="baby-box">
+                      <div>{element.name}</div>
+                      <div className="fruits">${element.price}</div>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          );
-        })}
-      </div>
-      <div className="container-title-box">
-        <div className="box-title-box">
-          <span className="shopping-text">Your total is ${total}.00</span>
+                ))}
+              </div>
+            );
+          })}
+        </div>
+        <div className="container-title-box">
+          <div className="box-title-box">
+            <span className="shopping-text">Your total is ${total}.00</span>
+          </div>
         </div>
       </div>
     </>

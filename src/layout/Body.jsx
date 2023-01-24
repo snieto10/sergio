@@ -48,9 +48,8 @@ function Body() {
               <div className="text">
                 ADD STOCKS AND TRACK YOUR PORTFOLIO <br />
                 <span style={{ fontSize: "1.4rem" }}>
-                  Used useState to create dynamic table, pulled the current
-                  price from API (using Fetch, .then()), sort the table by
-                  Sticker or Price. Validation was added.
+                  Used useState to create dynamic table, consumed a restful API
+                  to get stocks data, sorting and validation were added.
                 </span>
               </div>
               <br></br>
@@ -62,17 +61,17 @@ function Body() {
               <div className="text">
                 SLIDER 1 - Click to change image <br />
                 <span style={{ fontSize: "1.4rem" }}>
-                  Created basic Slider showing different pictures. This Slider
-                  was created using React and CSS.
+                  Sliders are becoming more important to show more data within
+                  the same page. Created a slider using the CSS opacity
+                  property.
                 </span>
               </div>
               <Slider />
               <div className="text">
                 SLIDER 2 - Grab to slide images <br />
                 <span style={{ fontSize: "1.4rem" }}>
-                  Copied Amazon.com Slider to show products for Tablet or
-                  Mobile. Used the React's framer-motion library, and useState,
-                  useEffect and useRef hooks.
+                  Copied Amazon.com Slider to show products for Tablet or Mobile
+                  using React's framer-motion library.
                 </span>
               </div>
               <Slider2 />
@@ -83,8 +82,8 @@ function Body() {
               <div className="text">
                 PLAY TIC-TAC-TOE AGAINST THE PC <br />
                 <span style={{ fontSize: "1.4rem" }}>
-                  Created a TicTacToe using Javascript and React. If you win,
-                  computer will have a extra turn to tie !
+                  Created a Tic-Tac-Toe using Javascript. If you win, computer
+                  will have a extra turn to tie !
                 </span>
               </div>
               <br></br>
