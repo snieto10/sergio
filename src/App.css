@@ -103,7 +103,7 @@ html {
 .background2_center {
   background-color: azure;
   margin: 0 auto;
-  height: 2325px;
+  height: 2900px;
   position: relative;
   z-index: -1;
   background-color: var(--background-color);

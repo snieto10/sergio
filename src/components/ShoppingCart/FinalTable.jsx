@@ -61,7 +61,10 @@ function FinalTable({ data }) {
 
   return (
     <>
-      <div className="alert-text">Please use desktop to see this project</div>
+      <div className="alert-text">
+        Please use desktop to see this project. <br></br>If you are using
+        desktop please zoom out.
+      </div>
       <div className="hiddenBox">
         <div className="container-title-box">
           <div className="box-title-box">

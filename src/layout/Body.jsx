@@ -80,7 +80,7 @@ function Body() {
               </div>
               <Slider />
               <div className="text">
-                SLIDER 2 - Grab to slide images <br />
+                SLIDER 2 - Drag to slide images <br />
                 <span style={{ fontSize: "1.4rem" }}>
                   Copied Amazon.com Slider to show products for Tablet or Mobile
                   using React's framer-motion library.

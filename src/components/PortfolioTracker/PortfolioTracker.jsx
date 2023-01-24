@@ -75,7 +75,6 @@ function PortfolioTracker() {
   };
 
   let handleAdd = () => {
-    console.log(1, stocks);
     let finder = stocks.find((element) => element.sticker == sticker);
 
     if (sticker.length === 0 && qty.length === 0) {
