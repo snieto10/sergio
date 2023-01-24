@@ -63,7 +63,7 @@ html {
 .main {
   display: flex;
   flex-direction: column;
-  height: 5000px;
+  height: 3200px;
   overflow: hidden;
   margin-top: 5rem;
   z-index: 0;
