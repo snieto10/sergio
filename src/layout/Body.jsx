@@ -5,7 +5,7 @@ import Slider from "../components/Slider/Slider";
 import Slider2 from "../components/Slider/Slider2";
 import TicTacToe from "../components/TicTacToe/TicTacToe";
 import ShoppingCart from "../components/ShoppingCart/ShoppingCart";
-import github from "../assets/images/github.svg";
+import { FaGithubSquare } from "react-icons/fa";
 
 function Body() {
   return (
@@ -44,7 +44,13 @@ function Body() {
           </div>
           <div className="background2_center">
             <div className="projects" id="project1">
-              <div className="projects_title"> 1- PORTFOLIO TRACKER</div>
+              <div className="projects_title">
+                {" "}
+                1- PORTFOLIO TRACKER
+                <div className="unique-github">
+                  <FaGithubSquare color="darkblue" width="20px" />
+                </div>
+              </div>
               <div className="text">
                 ADD STOCKS AND TRACK YOUR PORTFOLIO <br />
                 <span style={{ fontSize: "1.4rem" }}>
@@ -61,7 +67,7 @@ function Body() {
                 {" "}
                 2- SLIDERS{" "}
                 <div className="unique-github">
-                  <img src={github} alt="" />
+                  <FaGithubSquare color="darkblue" width="20px" />
                 </div>
               </div>
               <div className="text">
@@ -84,7 +90,13 @@ function Body() {
             </div>
             <div className="projects" id="project3">
               {" "}
-              <div className="projects_title"> 3- TIC-TAC-TOE</div>
+              <div className="projects_title">
+                {" "}
+                3- TIC-TAC-TOE
+                <div className="unique-github">
+                  <FaGithubSquare color="darkblue" width="20px" />
+                </div>
+              </div>
               <div className="text">
                 PLAY TIC-TAC-TOE AGAINST THE PC <br />
                 <span style={{ fontSize: "1.4rem" }}>
@@ -97,7 +109,13 @@ function Body() {
             </div>
             <div className="projects" id="project4">
               {" "}
-              <div className="projects_title"> 4- SHOPPING CART</div>
+              <div className="projects_title">
+                {" "}
+                4- SHOPPING CART{" "}
+                <div className="unique-github">
+                  <FaGithubSquare color="darkblue" width="20px" />
+                </div>
+              </div>
               <div className="text">
                 DRAG AND DROP MENU <br />
                 <span style={{ fontSize: "1.4rem" }}>

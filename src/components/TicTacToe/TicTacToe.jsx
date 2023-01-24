@@ -32,7 +32,6 @@ function TicTacToe() {
         setChampion(champions);
         setHuman(human + 1);
       }
-      console.log(2, champions);
       if (
         arrScore2.includes(arr[0]) &&
         arrScore2.includes(arr[1]) &&
