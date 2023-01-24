@@ -49,7 +49,7 @@ function Body() {
                 ADD STOCKS AND TRACK YOUR PORTFOLIO <br />
                 <span style={{ fontSize: "1.4rem" }}>
                   Used useState to create dynamic table, consumed a restful API
-                  to get stocks data, sorting and validation were added.
+                  to get stocks data, also sorting and validation were added.
                 </span>
               </div>
               <br></br>
@@ -93,10 +93,10 @@ function Body() {
               {" "}
               <div className="projects_title"> 4- SHOPPING CART</div>
               <div className="text">
-                PLAY TIC-TAC-TOE AGAINST THE PC <br />
+                DRAG AND DROP MENU <br />
                 <span style={{ fontSize: "1.4rem" }}>
-                  Created a TicTacToe using Javascript and React. If you win,
-                  computer will have a extra turn to tie !
+                  Using useState, useEffect, useRef created a drag and drop
+                  menu. Only works on desktops.
                 </span>
               </div>
               <ShoppingCart />
