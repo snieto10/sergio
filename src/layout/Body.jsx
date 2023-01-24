@@ -4,8 +4,8 @@ import { HashLink as Link } from "react-router-hash-link";
 import Slider from "../components/Slider/Slider";
 import Slider2 from "../components/Slider/Slider2";
 import TicTacToe from "../components/TicTacToe/TicTacToe";
-import { useRef } from "react";
 import ShoppingCart from "../components/ShoppingCart/ShoppingCart";
+import github from "../assets/images/github.svg";
 
 function Body() {
   return (
@@ -57,7 +57,13 @@ function Body() {
             </div>
             <div className="projects" id="project2">
               {" "}
-              <div className="projects_title"> 2- SLIDERS</div>
+              <div className="projects_title">
+                {" "}
+                2- SLIDERS{" "}
+                <div className="unique-github">
+                  <img src={github} alt="" />
+                </div>
+              </div>
               <div className="text">
                 SLIDER 1 - Click to change image <br />
                 <span style={{ fontSize: "1.4rem" }}>
