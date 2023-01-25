@@ -701,3 +701,53 @@ a:active {
 .shopping-text {
   font-size: 1.6rem;
 }
+
+/*Other Projects*/
+.other-box {
+  height: 300px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.other-box-project1 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.other-box-image1 {
+  height: 150px;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-box-image2 {
+  height: 150px;
+  background-color: darkblue;
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-image {
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.feedbackui-text {
+  color: white;
+}
+
+.other-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

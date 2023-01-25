@@ -6,6 +6,7 @@ import Slider2 from "../components/Slider/Slider2";
 import TicTacToe from "../components/TicTacToe/TicTacToe";
 import ShoppingCart from "../components/ShoppingCart/ShoppingCart";
 import { FaGithubSquare } from "react-icons/fa";
+import githubback from "../assets/images/GitHubPicture.jpg";
 
 function Body() {
   return (
@@ -128,6 +129,35 @@ function Body() {
             <div className="projects" id="project5">
               {" "}
               <div className="projects_title"> OTHER PROJECTS</div>
+              <div className="other-box">
+                <div className="other-box-project1">
+                  <div className="other-box-image1">
+                    <img className="other-image" src={githubback} alt="" />
+                  </div>
+                  <div className="other-text">
+                    <h3>GITHUB FINDER</h3>
+                    <h3>
+                      Used useContext to avoid prop-drilling and used axios to
+                      request the data
+                    </h3>
+                    <FaGithubSquare color="darkblue" width="20px" />
+                  </div>
+                </div>
+
+                <div className="other-box-project1">
+                  <div className="other-box-image2">
+                    <h3 className="feedbackui-text">Feedback UI</h3>
+                  </div>
+                  <div className="other-text">
+                    <h3>FEEDBACK UI</h3>
+                    <h3>
+                      Used useState and useEffect to add, delete and edit your
+                      feedback !
+                    </h3>
+                    <FaGithubSquare color="darkblue" width="20px" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
