@@ -7,6 +7,7 @@ import TicTacToe from "../components/TicTacToe/TicTacToe";
 import ShoppingCart from "../components/ShoppingCart/ShoppingCart";
 import { FaGithubSquare } from "react-icons/fa";
 import githubback from "../assets/images/GitHubPicture.jpg";
+import github from "../assets/images/github.svg";
 
 function Body() {
   return (
@@ -136,11 +137,11 @@ function Body() {
                   </div>
                   <div className="other-text">
                     <h3>GITHUB FINDER</h3>
-                    <h3>
+                    <h3 style={{ lineHeight: "15px" }}>
                       Used useContext to avoid prop-drilling and used axios to
                       request the data
                     </h3>
-                    <FaGithubSquare color="darkblue" width="20px" />
+                    <p className="other-view">view code</p>
                   </div>
                 </div>
 
@@ -150,11 +151,11 @@ function Body() {
                   </div>
                   <div className="other-text">
                     <h3>FEEDBACK UI</h3>
-                    <h3>
+                    <h3 style={{ lineHeight: "15px" }}>
                       Used useState and useEffect to add, delete and edit your
                       feedback !
                     </h3>
-                    <FaGithubSquare color="darkblue" width="20px" />
+                    <p className="other-view">view code</p>
                   </div>
                 </div>
               </div>

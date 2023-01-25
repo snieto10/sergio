@@ -751,3 +751,8 @@ a:active {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+.other-view {
+  color: var(--color-text);
+  text-align: center;
+}
