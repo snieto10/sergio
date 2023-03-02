@@ -18,12 +18,15 @@ function TopTitle() {
         </div>
         <div className='flex'>
           <div className='flex flex-icon'>
-            <a href='https://www.linkedin.com/in/sergio-nieto-ba5aab50/'>
+            <a
+              target='_target'
+              href='https://www.linkedin.com/in/sergio-nieto-ba5aab50/'
+            >
               <img className='fronticons' src={linkedIn} alt='linkedinlogo' />
             </a>
           </div>
           <div className='flex flex-icon'>
-            <a href='https://github.com/snieto10'>
+            <a target='_target' href='https://github.com/snieto10'>
               <img className='fronticons' src={github} alt='githublogo' />
             </a>
           </div>
