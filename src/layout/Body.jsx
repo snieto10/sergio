@@ -8,7 +8,7 @@ import ShoppingCart from '../components/ShoppingCart/ShoppingCart';
 import { FaGithubSquare } from 'react-icons/fa';
 import githubback from '../assets/images/GitHubPicture.jpg';
 import github from '../assets/images/github.svg';
-import profile from '../assets/images/profile.jpg';
+import profile from '../assets/images/SergioProfile.jpg';
 
 function Body() {
   return (
