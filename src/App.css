@@ -1,6 +1,6 @@
 :root {
   --border-line: 1px solid black;
-  --font-family: "Fredoka One", cursive;
+  --font-family: 'Fredoka One', cursive;
   --background-color: #f0f1f3;
   --color-text: rgb(35, 53, 101);
 }
@@ -229,7 +229,7 @@ a:active {
   font-weight: normal;
   letter-spacing: 1px;
   color: var(--color-text);
-  background-color: gold;
+  background-color: white;
   border: 2px solid var(--color-text);
   white-space: nowrap;
   box-shadow: 0 5px 0 0 var(--color-text);
