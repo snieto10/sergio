@@ -32,7 +32,6 @@ function Body() {
             <div className='title'>
               <div>
                 <h1 className='flex'>Scroll Down to see Projects</h1>
-                <h1>or use the Projects Menu</h1>
               </div>
               <div className='buttons'>
                 <Link to='#project2' smooth>
@@ -128,24 +127,28 @@ function Body() {
               {' '}
               <div className='projects_title'>
                 {' '}
-                4- SHOPPING CART{' '}
+                4- E-COMMERCE SITE{' '}
                 <div className='unique-github'>
                   <a
                     target='_target'
-                    href='https://github.com/snieto10/sergio/tree/master/src/components/ShoppingCart'
+                    href='https://github.com/snieto10/asos-clothing'
                   >
                     <FaGithubSquare color='darkblue' width='20px' />
                   </a>
                 </div>
               </div>
               <div className='text'>
-                DRAG AND DROP MENU <br />
+                CLOTHING STORE <br />
                 <span style={{ fontSize: '1.4rem' }}>
-                  Using useState, useEffect, useRef created a drag and drop
-                  menu. Only works on desktops.
+                  Using React created an online clothing store. You can create
+                  users, log in, log out, add and remove item from your shopping
+                  cart and navigate different categories. In this project
+                  useContext and useReducer were used.
                 </span>
               </div>
-              <ShoppingCart />
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <ShoppingCart />
+              </div>
             </div>
             <div className='projects' id='project5'>
               {' '}

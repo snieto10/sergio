@@ -1,21 +1,12 @@
-import FinalTable from "./FinalTable";
+import FinalTable from './FinalTable';
+import asos from '../../assets/images/asos.jpg';
 
 function ShoppingCart() {
-  const data = [
-    {
-      title: "box1",
-      items: [
-        { name: "banana", price: 6 },
-        { name: "avocado", price: 8 },
-        { name: "tomato", price: 4 },
-        { name: "juice", price: 7 },
-      ],
-    },
-    { title: "box2", items: [] },
-  ];
   return (
     <>
-      <FinalTable data={data} />
+      <a href='https://asos-clothing.web.app/' target='_blank'>
+        <img style={{ width: '500px', margin: '30px' }} src={asos} alt='' />
+      </a>
     </>
   );
 }
