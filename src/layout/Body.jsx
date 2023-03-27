@@ -8,6 +8,7 @@ import ShoppingCart from '../components/ShoppingCart/ShoppingCart';
 import { FaGithubSquare } from 'react-icons/fa';
 import githubback from '../assets/images/GitHubPicture.jpg';
 import github from '../assets/images/github.svg';
+import profile from '../assets/images/profile.JPG';
 
 function Body() {
   return (
@@ -30,6 +31,23 @@ function Body() {
               <img className='background1_img' src={hero} alt='' />
             </div>
             <div className='title'>
+              <div className='profile'>
+                <div className='profileA'>
+                  <img className='profileImage' src={profile} alt='' />
+                </div>
+                <div className='profileB'>
+                  <h4>Sergio Nieto</h4>
+                  <h4>Front-End Developer</h4>
+                  <h4>Miami, Fl</h4>
+                  <div>
+                    <span className='tag'>Javascript</span>
+                    <span className='tag'>Typescript</span>
+                    <span className='tag'>React</span>
+                    <span className='tag'>CSS</span>
+                    <span className='tag'>Google Cloud</span>
+                  </div>
+                </div>
+              </div>
               <div>
                 <h1 className='flex'>Scroll Down to see Projects</h1>
               </div>

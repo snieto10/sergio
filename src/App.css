@@ -756,3 +756,45 @@ a:active {
   color: var(--color-text);
   text-align: center;
 }
+
+/* PROFILE */
+
+.profile {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profileA {
+  width: 100px;
+  height: 100px;
+}
+.profileB {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profileB h4 {
+  margin: 0;
+}
+
+.profileImage {
+  width: 120px;
+  border-radius: 50px;
+}
+
+.tag {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  padding: 0.3rem 1rem;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 5px;
+}
