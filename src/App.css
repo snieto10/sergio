@@ -122,6 +122,7 @@ html {
 
 .title h1 {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .projects {
@@ -763,7 +764,7 @@ a:active {
   width: 600px;
   height: 100px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .profileA {
@@ -786,7 +787,8 @@ a:active {
 
 .profileImage {
   width: 120px;
-  border-radius: 50px;
+
+  border-radius: 50%;
 }
 
 .tag {

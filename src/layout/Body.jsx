@@ -56,7 +56,7 @@ function Body() {
                   <button className='btn_title'>The Favorite One</button>
                 </Link>
                 <Link to='#project4' smooth>
-                  <button className='btn_title'>The Complex One</button>
+                  <button className='btn_title'>The Difficult One</button>
                 </Link>
               </div>
             </div>
@@ -78,8 +78,8 @@ function Body() {
               <div className='text'>
                 ADD STOCKS AND TRACK YOUR PORTFOLIO <br />
                 <span style={{ fontSize: '1.4rem' }}>
-                  Used useState to create dynamic table, consumed a restful API
-                  to get stocks data, also sorting and validation were added.
+                  Applied useState to create a dynamic table, consumed a restful
+                  API to get stocks data and sorting and validation were added.
                 </span>
               </div>
               <br></br>
