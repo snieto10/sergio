@@ -65,7 +65,7 @@ function Body() {
             <div className='projects' id='project1'>
               <div className='projects_title'>
                 {' '}
-                1- PORTFOLIO TRACKER
+                1- INVESTMENTS TRACKER
                 <div className='unique-github'>
                   <a
                     target='_target'
@@ -78,8 +78,9 @@ function Body() {
               <div className='text'>
                 ADD STOCKS AND TRACK YOUR PORTFOLIO <br />
                 <span style={{ fontSize: '1.4rem' }}>
-                  Applied useState to create a dynamic table, consumed a restful
-                  API to get stocks data and sorting and validation were added.
+                  Applied useState to create a dynamic table. Consumed a restful
+                  API to get stocks data. Added sorting and validation to
+                  improve user experience.
                 </span>
               </div>
               <br></br>
@@ -102,17 +103,15 @@ function Body() {
               <div className='text'>
                 SLIDER 1 - Click to change image <br />
                 <span style={{ fontSize: '1.4rem' }}>
-                  Sliders are becoming more important to show more data within
-                  the same page. Created a slider using the CSS opacity
-                  property.
+                  Created a slider using the CSS opacity property.
                 </span>
               </div>
               <Slider />
               <div className='text'>
                 SLIDER 2 - Drag to slide images <br />
                 <span style={{ fontSize: '1.4rem' }}>
-                  Copied Amazon.com Slider to show products for Tablet or Mobile
-                  using React's framer-motion library.
+                  Replicated Amazon.com Slider to show products for Tablet or
+                  Mobile using React's framer-motion library.
                 </span>
               </div>
               <Slider2 />
@@ -134,8 +133,8 @@ function Body() {
               <div className='text'>
                 PLAY TIC-TAC-TOE AGAINST THE PC <br />
                 <span style={{ fontSize: '1.4rem' }}>
-                  Created a Tic-Tac-Toe using Javascript. If you win, computer
-                  will have a extra turn to tie !
+                  Created the game using Javascript. If you win, the computer
+                  will have an extra turn to tie the game !
                 </span>
               </div>
               <br></br>
@@ -158,10 +157,9 @@ function Body() {
               <div className='text'>
                 CLOTHING STORE <br />
                 <span style={{ fontSize: '1.4rem' }}>
-                  Using React created an online clothing store. You can create
-                  users, log in, log out, add and remove item from your shopping
-                  cart and navigate different categories. In this project
-                  useContext and useReducer were used.
+                  Created an online clothing store using React. Added user
+                  registration and login capabilities. Utilized useContext and
+                  useReducer as state management for the shopping cart contents.
                 </span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -184,7 +182,7 @@ function Body() {
                   <div className='other-text'>
                     <h3>GITHUB FINDER</h3>
                     <h3 style={{ lineHeight: '15px' }}>
-                      Used useContext to avoid prop-drilling and used axios to
+                      Used useContext to avoid prop-drilling and axios to
                       request the data
                     </h3>
                     <p className='other-view'>

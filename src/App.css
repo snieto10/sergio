@@ -773,7 +773,7 @@ a:active {
 }
 .profileB {
   width: 400px;
-  height: 600px;
+  height: 150px;
   display: flex;
   justify-content: flex-start;
   margin-left: 30px;
@@ -786,7 +786,8 @@ a:active {
 }
 
 .profileImage {
-  width: 120px;
+  width: 100px;
+  height: 100px;
 
   border-radius: 50%;
 }
